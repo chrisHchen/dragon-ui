@@ -51,6 +51,7 @@ export default class Slider extends Component{
 	onHandleMove(e){
 		e.stopPropagation()
 		e.preventDefault()
+		//待添加touch支持
 		if(this.draggingPayload.isDragging){
 			
 			const {min, max, step, styleWidth, getValue} = this.props
